@@ -2,31 +2,43 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>3.Create</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="6.log.css">
 </head>
 
 <body>
 
 <div class="container">
+    <h1>Create Account</h1>
 
-    <!-- LOGIN -->
-    <div class="box">
-        <h2>Login</h2>
-        <input type="email" placeholder="Enter email">
-        <input type="password" placeholder="Enter password">
-        <button>Login</button>
-    </div>
+    <form action="submit.php" method="post">
 
-    <!-- SIGNUP -->
-    <div class="box signup">
-        <p>Sign Up</p>
-        <input type="text" placeholder="Enter name">
-        <input type="email" placeholder="Enter email">
-        <input type="password" placeholder="Enter password">
-        <button>Sign Up</button>
-    </div>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter your name" required>
+        </div>
 
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+        </div>
+
+        <div class="input-group">
+            <label>Confirm Password</label>
+            <input type="password" name="confirm" placeholder="Confirm password" required>
+        </div>
+
+        <button type="submit">Create Account</button>
+
+    </form>
 </div>
 
 </body>
