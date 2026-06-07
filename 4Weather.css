@@ -135,6 +135,7 @@ input::placeholder {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 270px;
     gap: 15px;
 
     line-height: 1.5;
@@ -145,6 +146,7 @@ input::placeholder {
     #Show1,
     #Show2 {
         grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 
     }
 }
 
