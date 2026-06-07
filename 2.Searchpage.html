@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+<link rel="stylesheet" href="Weather.css">
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+    <a href="#Tomorrow" class="nav-link" onclick="control2()">Tomorrow</a>
+    <a href="#AfterTomorrow" class="nav-link" onclick="control3()">After Tomorrow</a>
+</div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- LEFT -->
+        <div class="box">
+            <h1>Weather App</h1>
+            <div class="input-group">
+                <input id="city" type="text" placeholder="Enter City">
+                <button class="btn1" onclick="control()">Search</button>
+            </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="box">
+            <div class="grid">
+
+                <div class="card"><h3>🌍 Location</h3><p id="location"></p></div>
+                <div class="card"><h3>🏳 Country</h3><p id="country"></p></div>
+                <div class="card"><h3>🌡 Temp</h3><p id="temp"></p></div>
+                <div class="card"><h3>🌡 Max</h3><p id="max"></p></div>
+                <div class="card"><h3>🌡 Min</h3><p id="min"></p></div>
+                <div class="card"><h3>💧 Feels</h3><p id="feels"></p></div>
+                <div class="card"><h3>🌤 Condition</h3><p id="condition"></p></div>
+                <div class="card"><h3>💨 Wind</h3><p id="wind"></p></div>
+                <div class="card"><h3>🌅 Sunrise</h3><p id="sunrise"></p></div>
+                <div class="card"><h3>🌇 Sunset</h3><p id="sunset"></p></div>
+
+            </div>
+        </div>
+
+    </div>
+<p id = "msg1"></p>
+<div id="Show1"></div> 
+<p id = "msg2"></p>
+<div id="Show2"></div>
+<script src="Climate.js"></script>
+</body>
+</html>
