@@ -13,13 +13,13 @@ async function control() {
         const response = await fetch(url);
         const data = await response.json();
 
-        // shortcuts
+       
         const area = data.nearest_area[0];
         const current = data.current_condition[0];
         const today = data.weather[0];
         const astro = today.astronomy[0];
 
-        // UI updates
+        
         document.querySelector("#location").innerText = area.areaName[0].value;
         document.querySelector("#country").innerText = area.country[0].value;
 
@@ -93,7 +93,7 @@ function control2() {
         msg1.style.display = "block";
         msg1.innerHTML = "Tomorrow’s weather forecast is ready for you...";
 
-        // Day 1 (your same data structure)
+        
         for (let i = 0; i < 6; i++) {
 
             let time = String(data1.weather[1].hourly[i].time).padStart(4, '0');
@@ -114,7 +114,7 @@ function control2() {
     })
     .catch(error => console.error(error));
 }
-
+// After Tomorrow
 function control3() {
 
     let city = document.querySelector("#city").value.trim();
@@ -137,7 +137,7 @@ function control3() {
         msg2.style.display = "block";
         msg2.innerHTML = "Extended forecast for after tomorrow is loading...";
 
-        // Day 2 (your same data structure)
+     
         for (let j = 0; j < 6; j++) {
 
             let time = String(data1.weather[2].hourly[j].time).padStart(4, '0');
